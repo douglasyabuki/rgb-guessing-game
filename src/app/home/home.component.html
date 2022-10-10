@@ -1,0 +1,23 @@
+<section>
+  <header>
+    <h1>GUESS THE RGB</h1>
+    <button (click)="gameStart()">START</button>
+  </header>
+
+  <body>
+    <div class="color-box" id="colorBox"></div>
+    <div class="options">
+      <button (click)="setGuess(0)">{{getRGB(0)}}</button>
+      <button (click)="setGuess(1)">{{getRGB(1)}}</button>
+      <button (click)="setGuess(2)">{{getRGB(2)}}</button>
+    </div>
+    <div class="counter">
+      <div>
+        <h2>Score: {{scoreCount}}</h2>
+      </div>
+      <div>
+        <h2>Mistakes {{mistakeCount}}</h2>
+      </div>
+    </div>
+  </body>
+</section>
